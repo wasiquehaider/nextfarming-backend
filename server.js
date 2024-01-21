@@ -5,7 +5,7 @@ const companyRoutes = require("./src/companies/routes");
 const fieldRoutes = require("./src/fields/routes");
 const employeeRoutes = require("./src/employees/routes");
 const app = express();
-const port = 3000;
+const port = process.env.PORT;
 app.use(express.json());
 
 app.get("/", (req, res) => {
